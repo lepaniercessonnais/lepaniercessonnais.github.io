@@ -1,40 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Le Panier Cessonnais - Site Web AMAP
 
-## Getting Started
+Site web complet pour l'Association pour le Maintien d'une Agriculture Paysanne (AMAP) "Le Panier Cessonnais".
 
-First, run the development server:
+## 🎯 Fonctionnalités
+
+- **Page d'accueil** : Présentation de l'AMAP avec sections hero, avantages et call-to-action
+- **Présentation AMAP** : Explication détaillée de ce qu'est une AMAP, mission, valeurs et histoire
+- **Producteurs & Produits** : Catalogue des producteurs partenaires et leurs produits de saison
+- **Fonctionnement** : Guide complet du fonctionnement de l'AMAP (adhésion, paniers, distribution)
+- **Actualités** : Blog avec articles, événements et newsletter
+- **Contact** : Formulaire de contact et informations pratiques
+- **Connexion** : Espace adhérents avec authentification et inscription
+
+## 🛠️ Technologies utilisées
+
+- **Next.js 15** : Framework React avec TypeScript
+- **Tailwind CSS 4** : Framework CSS utilitaire
+- **TypeScript** : Typage statique
+- **Responsive Design** : Interface adaptée mobile/desktop
+
+## 🚀 Installation et lancement
 
 ```bash
+# Installation des dépendances
+npm install
+
+# Lancement en mode développement
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build pour production
+npm run build
+
+# Déploiement sur GitHub Pages
+npm run deploy
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📁 Structure du projet
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```
+src/
+├── components/
+│   ├── Layout.tsx          # Layout principal avec navigation et footer
+│   └── Navigation.tsx      # Composant de navigation
+├── pages/
+│   ├── index.tsx           # Page d'accueil
+│   ├── amap.tsx            # Présentation AMAP
+│   ├── producteurs.tsx     # Producteurs et produits
+│   ├── fonctionnement.tsx  # Fonctionnement de l'AMAP
+│   ├── actualites.tsx      # Actualités et blog
+│   ├── contact.tsx         # Page de contact
+│   └── connexion.tsx       # Espace adhérents
+└── styles/
+    └── globals.css         # Styles globaux
+```
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 🎨 Design
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+- **Thème vert** : Couleurs naturelles et écologiques
+- **Interface moderne** : Design épuré et professionnel
+- **UX optimisée** : Navigation intuitive et formulaires clairs
+- **Accessibilité** : Respect des standards d'accessibilité web
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📱 Responsive
 
-## Learn More
+Le site est entièrement responsive et s'adapte à tous les écrans :
+- Mobile (< 768px)
+- Tablette (768px - 1024px)
+- Desktop (> 1024px)
 
-To learn more about Next.js, take a look at the following resources:
+## 🔧 Configuration
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+Le projet utilise :
+- **Next.js** avec configuration TypeScript
+- **Tailwind CSS** pour le styling
+- **ESLint** pour la qualité du code
+- **GitHub Pages** pour le déploiement
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📞 Contact
 
-## Deploy on Vercel
+Pour toute question ou suggestion concernant le site :
+- Email : lepaniercessonnais@gmail.com
+- Téléphone : 01 23 45 67 89
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 Licence
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Ce projet est développé pour l'AMAP "Le Panier Cessonnais" - Tous droits réservés.
